@@ -1,9 +1,9 @@
 package com.radityalabs.qualitymatter.androidApp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.radityalabs.qualitymatter.shared.Greeting
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.radityalabs.qualitymatter.shared.Greeting
 
 fun greet(): String {
     return Greeting().greeting()
