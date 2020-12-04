@@ -2,8 +2,8 @@
 
 <p align="center">
   <img width="32%" src="https://github.com/radityagumay/QualityMatters/blob/master/documentation/assets/android.png?raw=true">
-  <img width="32%" src="https://github.com/radityagumay/QualityMatters/blob/master/documentation/assets/ios1.png?raw=true">
-  <img width="32%" src="https://github.com/radityagumay/QualityMatters/blob/master/documentation/assets/ios2.png?raw=true">
+  <img width="31%" src="https://github.com/radityagumay/QualityMatters/blob/master/documentation/assets/ios1.png?raw=true">
+  <img width="31%" src="https://github.com/radityagumay/QualityMatters/blob/master/documentation/assets/ios2.png?raw=true">
 </p>
 
 QualityMatters is intended to showcases as Proof of Concept for Kotlin Multiplatform Mobile (KMM).
@@ -11,6 +11,21 @@ QualityMatters is intended to showcases as Proof of Concept for Kotlin Multiplat
 ### Architecture
 <img width="400" height="400" src="https://github.com/radityagumay/QualityMatters/blob/master/documentation/assets/kotlin-multiplatform.png?raw=true">
 
+Over the last few years we've seen that multiplatfrom has emerging, started from the hybrid platfrom such as: Apache Cordova, PhoneGap, Xamarin, React Native, even a native like Flutter.
+
+On Kotlin multiplatform there are at-least three layers of building block, such as:
+1. Enterprise Business Rules
+2. Interopable Business Rules
+3. Platform Specific Business Rules
+
+#### Enterprise Business Rules (Common Code)
+> includes the language, core libraries, and basic tools. Code written in common Kotlin works everywhere on all platforms. With Kotlin Multiplatform libraries, you can reuse the multiplatform logic in common and platform-specific code. Common code can rely on a set of libraries that cover everyday tasks such as HTTP, serialization, and managing coroutines.
+
+#### Interopable Business Rules
+> use platform-specific versions of Kotlin. Platform-specific versions of Kotlin (Kotlin/JVM, Kotlin/JS, Kotlin/Native) include extensions to the Kotlin language, and platform-specific libraries and tools.
+
+#### Platform Specific Business Rules
+> Here's where your native platform code is manifested. e.g Android ViewModel, or even Jetpack Compose, SwiftUI, and Jetbrains Compose
 
 ### Android
 - [Jetpack Compose](https://developer.android.com/jetpack/compose) A modern UI toolkit for Android
