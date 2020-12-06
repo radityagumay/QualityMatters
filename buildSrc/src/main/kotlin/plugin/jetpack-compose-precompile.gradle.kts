@@ -18,16 +18,16 @@ android {
 
 dependencies {
     implementation("androidx.compose.animation:animation:${Versions.compose}")
+    implementation("androidx.compose.compiler:compiler:${Versions.compose}")
     implementation("androidx.compose.foundation:foundation:${Versions.compose}")
-    implementation("androidx.compose.foundation:foundation-layout:${Versions.compose}")
     implementation("androidx.compose.material:material:${Versions.compose}")
-    implementation("androidx.compose.material:material-icons-extended:${Versions.compose}")
     implementation("androidx.compose.runtime:runtime:${Versions.compose}")
     implementation("androidx.compose.ui:ui:${Versions.compose}")
-    implementation("androidx.ui:ui-tooling:${Versions.compose}")
+    implementation("androidx.compose.ui:ui-tooling:${Versions.compose}")
+    androidTestImplementation("androidx.compose.ui:ui-test:${Versions.compose}")
+    implementation("dev.chrisbanes.accompanist:accompanist-coil:${Versions.composeAppComponist}")
     implementation("androidx.navigation:navigation-compose:${Versions.composeNav}")
     implementation("androidx.paging:paging-compose:${Versions.composePaging}")
-    implementation("dev.chrisbanes.accompanist:accompanist-coil:${Versions.composeAppComponist}")
 }
 
 

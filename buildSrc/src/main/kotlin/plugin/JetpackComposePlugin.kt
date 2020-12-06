@@ -33,17 +33,16 @@ class JetpackComposePlugin : Plugin<Project> {
 
         project.dependencies.run {
             addImplementation("androidx.compose.animation:animation:${Versions.compose}")
+            addImplementation("androidx.compose.compiler:compiler:${Versions.compose}")
             addImplementation("androidx.compose.foundation:foundation:${Versions.compose}")
-            addImplementation("androidx.compose.foundation:foundation-layout:${Versions.compose}")
             addImplementation("androidx.compose.material:material:${Versions.compose}")
-            addImplementation("androidx.compose.material:material-icons-extended:${Versions.compose}")
             addImplementation("androidx.compose.runtime:runtime:${Versions.compose}")
             addImplementation("androidx.compose.ui:ui:${Versions.compose}")
-            addImplementation("androidx.ui:ui-tooling:${Versions.compose}")
+            addImplementation("androidx.compose.ui:ui-tooling:${Versions.compose}")
+            addAndroidTestImplementation("androidx.compose.ui:ui-test:${Versions.compose}")
+            addImplementation("dev.chrisbanes.accompanist:accompanist-coil:${Versions.composeAppComponist}")
             addImplementation("androidx.navigation:navigation-compose:${Versions.composeNav}")
             addImplementation("androidx.paging:paging-compose:${Versions.composePaging}")
-
-            addImplementation("dev.chrisbanes.accompanist:accompanist-coil:${Versions.composeAppComponist}")
         }
 
     }
