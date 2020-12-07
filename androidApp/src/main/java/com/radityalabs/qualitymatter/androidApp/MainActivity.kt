@@ -1,6 +1,7 @@
 package com.radityalabs.qualitymatter.androidApp
 
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
