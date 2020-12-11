@@ -1,5 +1,7 @@
+//apply<plugin.JetpackComposePlugin>()
 plugins {
     id("com.android.application")
+    `jetpack-compose-precompile`
     kotlin("android")
     id("kotlin-android-extensions")
 }
@@ -32,4 +34,5 @@ android {
             isMinifyEnabled = false
         }
     }
+
 }
